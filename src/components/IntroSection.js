@@ -4,7 +4,7 @@ import './IntroSection.scss';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const IntroSection = () => {
+const IntroSection = ({ language }) => {
 
   const settings = {
     dots: true,
@@ -18,6 +18,20 @@ const IntroSection = () => {
     cssEase: 'linear'
   };
 
+  const descriptions = {
+    En: "Winner was established in 2020, and Winnie Lash Studios began in 2023. Today, we're a wholesale business specializing in eyelash extensions. Our goal is to ensure customer satisfaction by providing high-quality products at lower prices and maintaining good customer relations. Our dedicated staff works hard to meet customer needs. We're constantly innovating, improving, and expanding our selection with the latest market offerings. We promote and use the products ourselves. We hope you choose Winnie Lash Studios!",
+    Se: "Winner grundades 2020 och Winnie Lash Studios startade 2023. Idag är vi ett grossistföretag som specialiserar sig på fransförlängningar. Vårt mål är att säkerställa kundnöjdhet genom att erbjuda högkvalitativa produkter till lägre priser och att upprätthålla goda kundrelationer. Vår engagerade personal arbetar hårt för att möta kundernas behov. Vi är ständigt nyskapande, förbättrar och utökar vårt urval med de senaste produkterna på marknaden. Vi marknadsför och använder produkterna själva. Vi hoppas att du väljer Winnie Lash Studios!"
+  };
+
+  const btnGetStartedText = {
+    En: "Get Started",
+    Se: "Börja Blädra"
+  };
+
+  const btnContactText = {
+    En: "Contact Us",
+    Se: "Kontakta Oss"
+  };
 
   return (
     <div className="intro-section">
@@ -38,12 +52,11 @@ const IntroSection = () => {
       <h2 className="brand-name">Winnir</h2>
         <h1 className="title">LASH STUDIOS</h1>
         <p className="description">
-          Accumsan mauris mattis pellentesque viverra fringilla a. Lectus placerat ornare
-          volutpat donec tellus cursus senectus risus quam. Faucibus cursus amet.
+          {descriptions[language]}
         </p>
         <div className="btn-group">
-          <button className="btn btn-start">Get Started</button>
-          <button className="btn btn-contact">Contact Us</button>
+          <button className="btn btn-start">{btnGetStartedText[language]}</button>
+          <button className="btn btn-contact">{btnContactText[language]}</button>
         </div>
         
       </div>

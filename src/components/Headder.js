@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import './style.scss';
-// import britishFlag from './1.png';
-// import swedishFlag from './197564 (1).png';
 
-const Header = () => {
+const Header = ({ language, setLanguage }) => {
     const [searchTerm, setSearchTerm] = useState('');
-    const [language, setLanguage] = useState('En');
+
+    const SearchText = {
+        En: "Search",
+        Se: "Sök"
+    };
 
     const navLinks = {
         En: ['Home', 'About', 'Gallery', 'News'],
@@ -27,7 +29,7 @@ const Header = () => {
                 <input 
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    placeholder="Search"
+                    placeholder={SearchText[language]}
                 />
                 <button onClick={handleSearch}>🔍</button>
             </div>

@@ -1,0 +1,86 @@
+$primaryPink: rgb(242, 241, 242);
+$lightShadow: rgba(0, 0, 0, 0.15);
+$textColor: #333; // Adjust as needed to match the design
+
+.popular-categories {
+  position: relative;
+  padding: 2rem 0;
+  text-align: center;
+  background-color: $primaryPink;
+  margin-top: 3rem;
+
+  h2 {
+    display: flex;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    justify-content:flex-start;
+    color: $textColor;
+    padding-left: 2rem;
+  }
+
+  .category-card {
+    background: white;
+    box-shadow: 0 4px 6px $lightShadow; // Soft shadow around the cards
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left; 
+
+    img {
+      width: 100%;
+      height: auto;
+      transition: transform .3s ease;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    p {
+      padding: 0.5rem 1rem; 
+      font-size: 1rem;
+      color: $textColor; 
+      margin: 0; 
+    }
+  }
+
+  a.view-all {
+    position: absolute;
+    top: 4rem; 
+    right: 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none; 
+    color: $textColor;
+    display: flex; 
+    align-items: center; 
+    gap: 0.5rem; 
+  
+    &:hover {
+      color: darken($textColor, 20%);
+    }
+  
+    .view-all-text {
+      margin-right: 0.5rem; 
+    }
+  
+    svg {
+      display: block; 
+    }
+  }
+
+  .slick-slide {
+    outline: none; 
+  }
+  
+  .slick-dots {
+    bottom: -40px;
+    li {
+      margin: 0;
+      button {
+        &::before {
+          font-size: 10px;
+          color: $primaryPink;
+        }
+      }
+    }
+  }
+}
