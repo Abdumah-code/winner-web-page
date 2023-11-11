@@ -41,7 +41,7 @@ const IntroSection = ({ language }) => {
             <img src="/wow.jpg" alt="Lash Studio Background 1" />
           </div>
           <div>
-            <img src="/Rec.png" alt="Lash Studio Background 2" />
+            <img src="/2.jpg" alt="Lash Studio Background 2" />
           </div>
           <div>
             <img src="/off.jpg" alt="Lash Studio Background 3" />
@@ -49,7 +49,7 @@ const IntroSection = ({ language }) => {
         </Slider>
       </div>
       <div className="intro-content">
-      <h2 className="brand-name">Winnir</h2>
+      <h2 className="brand-name">Winner</h2>
         <h1 className="title">LASH STUDIOS</h1>
         <p className="description">
           {descriptions[language]}

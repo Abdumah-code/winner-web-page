@@ -20,10 +20,12 @@ const Header = ({ language, setLanguage }) => {
 
     return (
         <div className="header">
-            <div className="logo">
-                <div className="logo-winner">WINNER</div>
-                <div className="logo-lash-studios">LASH STUDIOS</div>
-            </div>
+            <a href="index.html">
+                <div className="logo">
+                    <div className="logo-winner">WINNER</div>
+                    <div className="logo-lash-studios">LASH STUDIOS</div>
+                </div>
+            </a>
 
             <div className="search-container">
                 <input 

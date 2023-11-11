@@ -20,14 +20,18 @@ $textColor: #333; // Adjust as needed to match the design
 
   .category-card {
     background: white;
-    box-shadow: 0 4px 6px $lightShadow; // Soft shadow around the cards
-    border-radius: 8px;
+    box-shadow: 0 8px 12px $lightShadow;
+    border-radius: 16px;
     overflow: hidden;
-    text-align: left; 
+    text-align: left;
+    padding: 1rem;
+    box-sizing: border-box;
 
     img {
-      width: 100%;
+      max-width: calc(100% - 2rem);
       height: auto;
+      display: block;
+      margin: 0 auto;
       transition: transform .3s ease;
       &:hover {
         transform: scale(1.05);
