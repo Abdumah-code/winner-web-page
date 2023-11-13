@@ -93,6 +93,54 @@ $brand-pink: rgb(252, 212, 232);
       }
     }
   }
+
+  @media (max-width: 576px) {
+    height: auto; // Adjust height for smaller screens
+    padding: px-to-rem(20px) 0; // Add some padding to the top and bottom
+
+    .intro-bg {
+      width: 400%;
+      height: 50vh; // Reduce height for smaller screens
+
+      img {
+        opacity: 0.6; // Adjust opacity for smaller screens
+      }
+    }
+
+    .intro-content {
+      padding: px-to-rem(20px); // Add padding to the content for smaller screens
+
+      .brand-name {
+        font-size: px-to-rem(70px); // Reduce font size
+        line-height: px-to-rem(48px); // Adjust line height
+        margin-top: px-to-rem(20px); // Adjust margin
+        margin-bottom: px-to-rem(10px);
+      }
+
+      .title {
+        font-size: px-to-rem(56px); // Reduce font size
+        line-height: px-to-rem(70px); // Adjust line height
+        margin-bottom: px-to-rem(10px);
+      }
+
+      .description {
+        font-size: px-to-rem(16px); // Reduce font size
+        line-height: px-to-rem(24px); // Adjust line height
+        width: 80%; // Increase width for better readability
+        margin-bottom: px-to-rem(20px);
+      }
+
+      .btn-group {
+        flex-direction: column; // Stack buttons vertically
+        gap: px-to-rem(10px);
+
+        .btn {
+          padding: px-to-rem(8px) px-to-rem(16px); // Adjust padding
+          font-size: px-to-rem(14px); // Adjust font size if needed
+        }
+      }
+    }
+  }
 }
 
 .slick-next,
