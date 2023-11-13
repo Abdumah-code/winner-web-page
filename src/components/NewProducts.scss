@@ -1,8 +1,12 @@
+@function px-to-rem($px, $base-font-size: 16px) {
+  @return #{$px / $base-font-size}rem;
+}
+
 $brand-pink: rgb(252, 212, 232);
 
 .new-products {
     background-color: #fff;
-    padding: 2rem;
+    padding: px-to-rem(32px); // Converted 2rem
     text-align: center;
   
     h2 {
@@ -11,33 +15,33 @@ $brand-pink: rgb(252, 212, 232);
   
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(3, 30rem);
-      gap: 1rem;
+      grid-template-columns: repeat(3, px-to-rem(480px)); // Converted 30rem assuming 1rem = 16px
+      gap: px-to-rem(16px); // Converted 1rem
       justify-content: center;
-      margin-top: 1rem;
+      margin-top: px-to-rem(16px); // Converted 1rem
   
       .product-card {
         border: 1px solid #ddd;
-        padding: 1rem;
-        border-radius: 8px;
+        padding: px-to-rem(16px); // Converted 1rem
+        border-radius: px-to-rem(8px); // Converted 8px
         transition: box-shadow 0.3s ease;
   
         &:hover {
-          box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+          box-shadow: 0 px-to-rem(2px) px-to-rem(15px) rgba(0,0,0,0.1);
         }
   
         img {
           max-width: 100%;
           height: auto;
-          margin-bottom: 1rem;
+          margin-bottom: px-to-rem(16px); // Converted 1rem
         }
   
         h3 {
-          margin-bottom: 0.5rem;
+          margin-bottom: px-to-rem(8px); // Converted 0.5rem
         }
   
         p {
-          margin-bottom: 0.5rem;
+          margin-bottom: px-to-rem(8px); // Converted 0.5rem
           &:last-child {
             color: #333;
           }
@@ -46,15 +50,15 @@ $brand-pink: rgb(252, 212, 232);
     }
   
     .actions {
-      margin-top: 2rem;
+      margin-top: px-to-rem(32px); // Converted 2rem
   
       .btn-start, .btn-see-all {
-        padding: 0.5rem 1rem;
+        padding: px-to-rem(8px) px-to-rem(16px); // Converted 0.5rem and 1rem
         border: none;
-        font-size: 1.5rem;
-        border-radius: 4px;
+        font-size: px-to-rem(24px); // Converted 1.5rem
+        border-radius: px-to-rem(4px); // Converted 4px
         cursor: pointer;
-        margin-right: 0.5rem;
+        margin-right: px-to-rem(8px); // Converted 0.5rem
         transition: background-color 0.3s, transform 0.3s;
         background-color: $brand-pink;
         color: white;
@@ -62,10 +66,9 @@ $brand-pink: rgb(252, 212, 232);
         &:hover {
           background-color: darken($brand-pink, 10%);
           color: #fff;
-          transform: translateY(-3px);
+          transform: translateY(px-to-rem(-3px));
         }
       }
       
     }
-  }
-  
+}

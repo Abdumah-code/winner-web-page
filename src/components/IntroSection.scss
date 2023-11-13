@@ -1,9 +1,13 @@
+@function px-to-rem($px, $base-font-size: 16px) {
+  @return #{$px / $base-font-size}rem;
+}
+
 $brand-pink: rgb(252, 212, 232);
 
 .intro-section {
   position: relative;
   width: 100%;
-  height: 51.5rem;
+  height: px-to-rem(824px); // Converted 51.5rem assuming 1rem = 16px
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,39 +32,39 @@ $brand-pink: rgb(252, 212, 232);
     text-align: center;
 
     .brand-name {
-      font-size: 5rem;
+      font-size: px-to-rem(80px); // Converted 5rem
       color: $brand-pink;
       font-weight: 400;
-      line-height: 93px;
-      margin-top: 7rem;
-      margin-bottom: -1rem;
+      line-height: px-to-rem(93px);
+      margin-top: px-to-rem(112px); // Converted 7rem
+      margin-bottom: px-to-rem(-16px); // Converted -1rem
       font-family: 'Alex Brush', cursive;
     }
 
     .title {
-      font-size: 7rem;
+      font-size: px-to-rem(112px); // Converted 7rem
       color: white;
       font-weight: 700;
-      line-height: 140px;
-      margin-bottom: 1rem;
+      line-height: px-to-rem(140px);
+      margin-bottom: px-to-rem(16px); // Converted 1rem
     }
 
     .description {
-      font-size: 1.2rem;
+      font-size: px-to-rem(19.2px); // Converted 1.2rem
       font-weight: 500;
-      line-height: 33px;
+      line-height: px-to-rem(33px);
       color: white;
       width: 60%;
-      margin: 0 auto 2rem;
+      margin: 0 auto px-to-rem(32px); // Converted 2rem
     }
 
     .btn-group {
       display: flex;
-      gap: 1rem;
+      gap: px-to-rem(16px); // Converted 1rem
       justify-content: center;
 
       .btn {
-        padding: 0.7rem 1.5rem;
+        padding: px-to-rem(11.2px) px-to-rem(24px); // Converted 0.7rem and 1.5rem
         border: none;
         cursor: pointer;
         transition: background-color 0.3s, transform 0.3s;
@@ -71,19 +75,19 @@ $brand-pink: rgb(252, 212, 232);
 
           &:hover {
             background-color: darken($brand-pink, 10%);
-            transform: translateY(-3px);
+            transform: translateY(px-to-rem(-3px));
           }
         }
 
         &.btn-contact {
           background-color: transparent;
-          border: 2px solid $brand-pink;
+          border: px-to-rem(3.2px) solid $brand-pink; // Converted 2px
           color: $brand-pink;
 
           &:hover {
             background-color: $brand-pink;
             color: white;
-            transform: translateY(-3px);
+            transform: translateY(px-to-rem(-3px));
           }
         }
       }

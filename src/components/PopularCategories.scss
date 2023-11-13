@@ -1,34 +1,38 @@
+@function px-to-rem($px, $base-font-size: 16px) {
+  @return #{$px / $base-font-size}rem;
+}
+
 $primaryPink: rgb(242, 241, 242);
 $lightShadow: rgba(0, 0, 0, 0.15);
 $textColor: #333;
 
 .popular-categories {
   position: relative;
-  padding: 1rem 0;
+  padding: px-to-rem(16px) 0; // Converted 1rem
   text-align: center;
   background-color: $primaryPink;
-  margin-top: 3rem;
+  margin-top: px-to-rem(48px); // Converted 3rem
 
   h2 {
     display: flex;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: px-to-rem(32px); // Converted 2rem
+    margin-bottom: px-to-rem(24px); // Converted 1.5rem
     justify-content:flex-start;
     color: $textColor;
-    padding-left: 2rem;
+    padding-left: px-to-rem(32px); // Converted 2rem
   }
 
   .category-card {
     background: white;
-    box-shadow: 0 8px 12px $lightShadow;
-    border-radius: 16px;
+    box-shadow: 0 px-to-rem(8px) px-to-rem(12px) $lightShadow;
+    border-radius: px-to-rem(16px); // Converted 16px
     overflow: hidden;
     text-align: left;
-    padding: 1rem;
+    padding: px-to-rem(16px); // Converted 1rem
     box-sizing: border-box;
 
     img {
-      max-width: calc(100% - 2rem);
+      max-width: calc(100% - px-to-rem(32px)); // Converted 2rem
       height: auto;
       display: block;
       margin: 0 auto;
@@ -39,8 +43,8 @@ $textColor: #333;
     }
 
     p {
-      padding: 0.5rem 1rem; 
-      font-size: 1rem;
+      padding: px-to-rem(8px) px-to-rem(16px); // Converted 0.5rem and 1rem 
+      font-size: px-to-rem(16px); // Converted 1rem
       color: $textColor; 
       margin: 0; 
     }
@@ -48,22 +52,22 @@ $textColor: #333;
 
   a.view-all {
     position: absolute;
-    top: 4rem; 
-    right: 2rem;
+    top: px-to-rem(64px); // Converted 4rem 
+    right: px-to-rem(32px); // Converted 2rem
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: px-to-rem(24px); // Converted 1.5rem
     text-decoration: none; 
     color: $textColor;
     display: flex; 
     align-items: center; 
-    gap: 0.5rem; 
+    gap: px-to-rem(8px); // Converted 0.5rem
   
     &:hover {
       color: darken($textColor, 20%);
     }
   
     .view-all-text {
-      margin-right: 0.5rem; 
+      margin-right: px-to-rem(8px); // Converted 0.5rem 
     }
   
     svg {
@@ -76,12 +80,12 @@ $textColor: #333;
   }
   
   .slick-dots {
-    bottom: -40px;
+    bottom: px-to-rem(-40px); // Converted -40px
     li {
       margin: 0;
       button {
         &::before {
-          font-size: 10px;
+          font-size: px-to-rem(10px); // Converted 10px
           color: $primaryPink;
         }
       }

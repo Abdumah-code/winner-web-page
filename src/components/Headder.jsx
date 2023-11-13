@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './style.scss';
+import './Header.scss';
 
 const Header = ({ language, setLanguage }) => {
     const [searchTerm, setSearchTerm] = useState('');
