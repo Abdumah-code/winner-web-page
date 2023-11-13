@@ -1,0 +1,168 @@
+$pink: rgb(252, 212, 232); // Adjust the pink color to match your design
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 0;
+  font-family: Arial, sans-serif; // Change to match your design's font
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    .footer-logo {
+      text-decoration: none;
+      .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logo-winner {
+          font-size: 2.5rem;
+          color: $pink;
+        }
+        .logo-lash-studios {
+          font-size: 2.5rem;
+          color: $pink;
+        }
+      }
+    }
+
+    .social-media-icons {
+      margin-top: 1rem;
+      a {
+        color: #fff; // Icons color
+        margin: 0 10px; // Space between icons
+        font-size: 1.5rem; // Size of icons
+    
+        &:hover {
+          color: $pink; // Change icon color on hover to match your brand color
+        }
+      }
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: start;
+      width: 100%;
+      margin-top: 2rem;
+
+      .links, .services, .newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      & > :first-child {
+        margin-left: 10rem;
+      }
+    
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        strong {
+          margin-bottom: 1rem;
+          font-size: 1.2rem;
+        }
+
+        a {
+          color: #fff;
+          margin-bottom: 0.5rem;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        strong {
+          margin-bottom: 1rem;
+          font-size: 1.2rem;
+        }
+
+        a {
+          color: #fff;
+          margin-bottom: 0.5rem;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative; // Add position relative here
+      
+        strong {
+          margin-bottom: 1rem;
+          font-size: 1.2rem;
+        }
+      
+        .input-group {
+          position: relative; // Relative position for the input wrapper
+          width: calc(100% - 1rem);
+      
+          input {
+            padding: 0.5rem;
+            padding-right: 3rem; // Increase padding to make room for the button
+            width: 100%;
+            border: 1px solid #fff;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            border-radius: 4px;
+            box-sizing: border-box; // Ensure padding is included in width
+      
+            &::placeholder {
+              color: #fff;
+            }
+          }
+      
+          button {
+            position: absolute; // Absolute position for the button
+            top: 0;
+            right: 0;
+            background-color: $pink;
+            color: #fff;
+            border: none;
+            padding: 0.55rem 1rem;
+            border-top-right-radius: 4px; // Match the input's border-radius
+            border-bottom-right-radius: 4px; // Match the input's border-radius
+            cursor: pointer;
+      
+            &:hover {
+              background-color: darken($pink, 10%);
+            }
+          }
+        }
+      }
+      
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    width: 100%; // Ensure this takes the full width
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
