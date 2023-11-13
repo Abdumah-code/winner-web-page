@@ -47,7 +47,7 @@ $pink: rgb(252, 212, 232); // Adjust the pink color to match your design
     .footer-links {
       display: flex;
       justify-content: space-around;
-      align-items: start;
+      align-items: flex-start;
       width: 100%;
       margin-top: 2rem;
 
