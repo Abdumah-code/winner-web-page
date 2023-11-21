@@ -1,119 +1,116 @@
-@function px-to-rem($px, $base-font-size: 16px) {
-    @return #{$px / $base-font-size}rem;
-  }
-  
-  $header-color: rgb(252, 212, 232);
-  
-  body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: black;
-      box-sizing: border-box;
-  }
-  
-  .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: px-to-rem(10px) px-to-rem(50px);
-      background-color: #fff;
-      height: px-to-rem(64px);
-      width: 100%;
-      box-sizing: border-box;
-  
-      a {
-          text-decoration: none;
-  
-          .logo {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              font-weight: bold;
-              
-              .logo-winner {
-                  font-size: px-to-rem(36px);
-                  color: darken($header-color, 15%);
-              }
-              
-              .logo-lash-studios {
-                  font-size: px-to-rem(20px);
-                  color: darken($header-color, 10%);
-              }
-          }
-      }
-    
-      .search-container {
-          display: flex;
+$header-color: rgb(252, 212, 232);
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 3.125rem; /* Replaced px-to-rem(10px) px-to-rem(50px) */
+    background-color: #fff;
+    height: 4rem; /* Replaced px-to-rem(64px) */
+    width: 100%;
+    box-sizing: border-box;
+
+    a {
+        text-decoration: none;
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: bold;
+            
+            .logo-winner {
+                font-size: 2.25rem; /* Replaced px-to-rem(36px) */
+                color: darken($header-color, 15%);
+            }
+            
+            .logo-lash-studios {
+                font-size: 1.25rem; /* Replaced px-to-rem(20px) */
+                color: darken($header-color, 10%);
+            }
+        }
+    }
+
+    .search-container {
+        display: flex;
+      
+        input, button {
+            border: none;
+            padding: 0.625rem; /* Replaced px-to-rem(10px) */
+            border-radius: 1.25rem; /* Replaced px-to-rem(20px) */
+            margin-right: 0.3125rem; /* Replaced px-to-rem(5px) */
+        }
         
-          input, button {
-              border: none;
-              padding: px-to-rem(10px);
-              border-radius: px-to-rem(20px);
-              margin-right: px-to-rem(5px);
-          }
-          
-          input {
-              flex-grow: 2;
-              width: px-to-rem(400px); // Assuming 25rem is equivalent to 400px
-              background-color: rgba(128, 128, 128, 0.128);
-          }
-        
-          button {
-              background-color: $header-color;
-              color: #fff;
-              cursor: pointer;
-              box-shadow: 0 px-to-rem(4px) px-to-rem(8px) rgba(0, 0, 0, 0.1);
-          }
-      }
-    
-      .nav-links {
-          display: flex;
-          gap: px-to-rem(32px); // Assuming 2rem is equivalent to 32px
-  
-          a {
-              color: black;
-              text-decoration: none;
-          }
-      }
-    
-      .icons {
-          display: flex;
-          gap: px-to-rem(20px);
-        
-          .cart-icon, .profile-icon {
-              cursor: pointer;
-          }
-  
-          select {
-              border: none;
-              cursor: pointer;
-              background-color: transparent;
-          }
-      }
+        input {
+            flex-grow: 2;
+            width: 25rem; /* Replaced px-to-rem(400px) */
+            background-color: rgba(128, 128, 128, 0.128);
+        }
+      
+        button {
+            background-color: $header-color;
+            color: #fff;
+            cursor: pointer;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Replaced px-to-rem(4px) px-to-rem(8px) */
+        }
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 2rem; /* Replaced px-to-rem(32px) */
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+
+    .icons {
+        display: flex;
+        gap: 1.25rem; /* Replaced px-to-rem(20px) */
+      
+        .cart-icon, .profile-icon {
+            cursor: pointer;
+        }
+
+        select {
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+        }
+    }
 
     @media (max-width: 576px) {
         flex-direction: column;
-        padding: px-to-rem(10px);
+        padding: 0.625rem; /* Replaced px-to-rem(10px) */
         height: auto;
         width: 100%;
-
+    
         .nav-links, .search-container {
             flex-direction: column;
-            gap: px-to-rem(10px);
+            gap: 0.625rem; /* Replaced px-to-rem(10px) */
         }
-
+    
         .logo-winner {
-            font-size: px-to-rem(24px);
+            font-size: 1.5rem; /* Replaced px-to-rem(24px) */
         }
-
+    
         .logo-lash-studios {
-            font-size: px-to-rem(16px);
+            font-size: 1rem; /* Replaced px-to-rem(16px) */
         }
-
+    
         .icons {
-            gap: px-to-rem(10px);
+            gap: 0.625rem; /* Replaced px-to-rem(10px) */
         }
     }
+    
 
     //gotta focus on this stuff fam before u send the code to the dude
     @media (min-width: 577px) and (max-width: 769px) {

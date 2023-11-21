@@ -1,12 +1,8 @@
-@function px-to-rem($px, $base-font-size: 16px) {
-  @return #{$px / $base-font-size}rem;
-}
-
 $brand-pink: rgb(252, 212, 232);
 
 .new-products {
     background-color: #fff;
-    padding: px-to-rem(32px); // Converted 2rem
+    padding: 2rem; /* Converted from px-to-rem(32px) */
     text-align: center;
   
     h2 {
@@ -15,33 +11,33 @@ $brand-pink: rgb(252, 212, 232);
   
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(3, px-to-rem(460px)); // Converted 30rem assuming 1rem = 16px
-      gap: px-to-rem(16px); // Converted 1rem
+      grid-template-columns: repeat(3, 28.75rem); /* Converted from px-to-rem(460px) */
+      gap: 1rem; /* Converted from px-to-rem(16px) */
       justify-content: center;
-      margin-top: px-to-rem(16px); // Converted 1rem
+      margin-top: 1rem; /* Converted from px-to-rem(16px) */
   
       .product-card {
         border: 1px solid #ddd;
-        padding: px-to-rem(16px); // Converted 1rem
-        border-radius: px-to-rem(8px); // Converted 8px
+        padding: 1rem; /* Converted from px-to-rem(16px) */
+        border-radius: 0.5rem; /* Converted from px-to-rem(8px) */
         transition: box-shadow 0.3s ease;
   
         &:hover {
-          box-shadow: 0 px-to-rem(2px) px-to-rem(15px) rgba(0,0,0,0.1);
+          box-shadow: 0 0.125rem 0.9375rem rgba(0,0,0,0.1); /* Converted from px-to-rem(2px) px-to-rem(15px) */
         }
   
         img {
           max-width: 100%;
           height: auto;
-          margin-bottom: px-to-rem(16px); // Converted 1rem
+          margin-bottom: 1rem; /* Converted from px-to-rem(16px) */
         }
   
         h3 {
-          margin-bottom: px-to-rem(8px); // Converted 0.5rem
+          margin-bottom: 0.5rem; /* Converted from px-to-rem(8px) */
         }
   
         p {
-          margin-bottom: px-to-rem(8px); // Converted 0.5rem
+          margin-bottom: 0.5rem; /* Converted from px-to-rem(8px) */
           &:last-child {
             color: #333;
           }
@@ -50,15 +46,15 @@ $brand-pink: rgb(252, 212, 232);
     }
   
     .actions {
-      margin-top: px-to-rem(32px); // Converted 2rem
+      margin-top: 2rem; /* Converted from px-to-rem(32px) */
   
       .btn-start, .btn-see-all {
-        padding: px-to-rem(8px) px-to-rem(16px); // Converted 0.5rem and 1rem
+        padding: 0.5rem 1rem; /* Converted from px-to-rem(8px) px-to-rem(16px) */
         border: none;
-        font-size: px-to-rem(24px); // Converted 1.5rem
-        border-radius: px-to-rem(4px); // Converted 4px
+        font-size: 1.5rem; /* Converted from px-to-rem(24px) */
+        border-radius: 0.25rem; /* Converted from px-to-rem(4px) */
         cursor: pointer;
-        margin-right: px-to-rem(8px); // Converted 0.5rem
+        margin-right: 0.5rem; /* Converted from px-to-rem(8px) */
         transition: background-color 0.3s, transform 0.3s;
         background-color: $brand-pink;
         color: white;
@@ -66,9 +62,8 @@ $brand-pink: rgb(252, 212, 232);
         &:hover {
           background-color: darken($brand-pink, 10%);
           color: #fff;
-          transform: translateY(px-to-rem(-3px));
+          transform: translateY(-0.1875rem); /* Converted from px-to-rem(-3px) */
         }
       }
-      
     }
 }

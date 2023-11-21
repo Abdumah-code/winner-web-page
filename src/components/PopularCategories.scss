@@ -1,38 +1,34 @@
-@function px-to-rem($px, $base-font-size: 16px) {
-  @return #{$px / $base-font-size}rem;
-}
-
 $primaryPink: rgb(242, 241, 242);
 $lightShadow: rgba(0, 0, 0, 0.15);
 $textColor: #333;
 
 .popular-categories {
   position: relative;
-  padding: px-to-rem(16px) 0; // Converted 1rem
+  padding: 1rem 0; /* Converted from px-to-rem(16px) */
   text-align: center;
   background-color: $primaryPink;
-  margin-top: px-to-rem(48px); // Converted 3rem
+  margin-top: 3rem; /* Converted from px-to-rem(48px) */
 
   h2 {
     display: flex;
-    font-size: px-to-rem(32px); // Converted 2rem
-    margin-bottom: px-to-rem(24px); // Converted 1.5rem
-    justify-content:flex-start;
+    font-size: 2rem; /* Converted from px-to-rem(32px) */
+    margin-bottom: 1.5rem; /* Converted from px-to-rem(24px) */
+    justify-content: flex-start;
     color: $textColor;
-    padding-left: px-to-rem(32px); // Converted 2rem
+    padding-left: 2rem; /* Converted from px-to-rem(32px) */
   }
 
   .category-card {
     background: white;
-    box-shadow: 0 px-to-rem(8px) px-to-rem(12px) $lightShadow;
-    border-radius: px-to-rem(16px); // Converted 16px
+    box-shadow: 0 0.5rem 0.75rem $lightShadow; /* Converted from px-to-rem(8px) px-to-rem(12px) */
+    border-radius: 1rem; /* Converted from px-to-rem(16px) */
     overflow: hidden;
     text-align: left;
-    padding: px-to-rem(16px); // Converted 1rem
+    padding: 1rem; /* Converted from px-to-rem(16px) */
     box-sizing: border-box;
 
     img {
-      max-width: calc(100% - px-to-rem(32px)); // Converted 2rem
+      max-width: calc(100% - 2rem); /* Converted from px-to-rem(32px) */
       height: auto;
       display: block;
       margin: 0 auto;
@@ -43,49 +39,49 @@ $textColor: #333;
     }
 
     p {
-      padding: px-to-rem(8px) px-to-rem(16px); // Converted 0.5rem and 1rem 
-      font-size: px-to-rem(16px); // Converted 1rem
-      color: $textColor; 
-      margin: 0; 
+      padding: 0.5rem 1rem; /* Converted from px-to-rem(8px) px-to-rem(16px) */
+      font-size: 1rem; /* Converted from px-to-rem(16px) */
+      color: $textColor;
+      margin: 0;
     }
   }
 
   a.view-all {
     position: absolute;
-    top: px-to-rem(64px); // Converted 4rem 
-    right: px-to-rem(32px); // Converted 2rem
+    top: 4rem; /* Converted from px-to-rem(64px) */
+    right: 2rem; /* Converted from px-to-rem(32px) */
     font-weight: bold;
-    font-size: px-to-rem(24px); // Converted 1.5rem
-    text-decoration: none; 
+    font-size: 1.5rem; /* Converted from px-to-rem(24px) */
+    text-decoration: none;
     color: $textColor;
-    display: flex; 
-    align-items: center; 
-    gap: px-to-rem(8px); // Converted 0.5rem
-  
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Converted from px-to-rem(8px) */
+
     &:hover {
       color: darken($textColor, 20%);
     }
-  
+
     .view-all-text {
-      margin-right: px-to-rem(8px); // Converted 0.5rem 
+      margin-right: 0.5rem; /* Converted from px-to-rem(8px) */
     }
-  
+
     svg {
-      display: block; 
+      display: block;
     }
   }
 
   .slick-slide {
-    outline: none; 
+    outline: none;
   }
-  
+
   .slick-dots {
-    bottom: px-to-rem(-40px); // Converted -40px
+    bottom: -2.5rem; /* Converted from px-to-rem(-40px) */
     li {
       margin: 0;
       button {
         &::before {
-          font-size: px-to-rem(10px); // Converted 10px
+          font-size: 0.625rem; /* Converted from px-to-rem(10px) */
           color: $primaryPink;
         }
       }

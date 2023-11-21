@@ -1,22 +1,18 @@
-@function px-to-rem($px, $base-font-size: 16px) {
-  @return #{$px / $base-font-size}rem;
-}
-
 $pink: rgb(252, 212, 232);
 
 .footer {
   background-color: #000;
   color: #fff;
-  padding: px-to-rem(32px) 0; // Converted 2rem
-  font-family: Arial, sans-serif; // Change to match your design's font
+  padding: 2rem 0; /* Converted from px-to-rem(32px) */
+  font-family: Arial, sans-serif;
 
   .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: px-to-rem(1200px); // Converted 1200px
+    max-width: 75rem; /* Converted from px-to-rem(1200px) */
     margin: 0 auto;
-    padding: 0 px-to-rem(16px); // Converted 1rem
+    padding: 0 1rem; /* Converted from px-to-rem(16px) */
 
     .footer-logo {
       text-decoration: none;
@@ -25,18 +21,18 @@ $pink: rgb(252, 212, 232);
         flex-direction: column;
         align-items: center;
         .logo-winner, .logo-lash-studios {
-          font-size: px-to-rem(40px); // Converted 2.5rem
+          font-size: 2.5rem; /* Converted from px-to-rem(40px) */
           color: $pink;
         }
       }
     }
 
     .social-media-icons {
-      margin-top: px-to-rem(16px); // Converted 1rem
+      margin-top: 1rem; /* Converted from px-to-rem(16px) */
       a {
         color: #fff;
-        margin: 0 px-to-rem(10px); // Converted 10px
-        font-size: px-to-rem(24px); // Converted 1.5rem
+        margin: 0 0.625rem; /* Converted from px-to-rem(10px) */
+        font-size: 1.5rem; /* Converted from px-to-rem(24px) */
     
         &:hover {
           color: $pink;
@@ -49,10 +45,10 @@ $pink: rgb(252, 212, 232);
       justify-content: space-around;
       align-items: flex-start;
       width: 100%;
-      margin-top: px-to-rem(32px); // Converted 2rem
+      margin-top: 2rem; /* Converted from px-to-rem(32px) */
 
       & > :first-child {
-        margin-left: px-to-rem(160px); // Converted 10rem
+        margin-left: 10rem; /* Converted from px-to-rem(160px) */
       }
 
       .links, .services, .newsletter {
@@ -61,13 +57,13 @@ $pink: rgb(252, 212, 232);
         align-items: center;
 
         strong {
-          margin-bottom: px-to-rem(16px); // Converted 1rem
-          font-size: px-to-rem(19.2px); // Converted 1.2rem
+          margin-bottom: 1rem; /* Converted from px-to-rem(16px) */
+          font-size: 1.2rem; /* Converted from px-to-rem(19.2px) */
         }
 
         a {
           color: #fff;
-          margin-bottom: px-to-rem(8px); // Converted 0.5rem
+          margin-bottom: 0.5rem; /* Converted from px-to-rem(8px) */
           text-decoration: none;
 
           &:hover {
@@ -81,11 +77,11 @@ $pink: rgb(252, 212, 232);
       
         .input-group {
           position: relative;
-          width: calc(100% - px-to-rem(16px)); // Converted 1rem
+          width: calc(100% - 1rem); /* Converted from px-to-rem(16px) */
       
           input {
-            padding: px-to-rem(8px) 0 px-to-rem(8px) px-to-rem(48px); // Adjusted padding
-            border-radius: px-to-rem(4px); // Converted 4px
+            padding: 0.5rem 0 0.5rem 3rem; /* Adjusted padding */
+            border-radius: 0.25rem; /* Converted from px-to-rem(4px) */
             width: 100%;
             border: 1px solid #fff;
             background-color: rgba(255, 255, 255, 0.2);
@@ -105,9 +101,9 @@ $pink: rgb(252, 212, 232);
             background-color: $pink;
             color: #fff;
             border: none;
-            padding: px-to-rem(8.8px) px-to-rem(16px); // Converted 0.55rem and 1rem
-            border-top-right-radius: px-to-rem(4px); // Converted 4px
-            border-bottom-right-radius: px-to-rem(4px);
+            padding: 0.55rem 1rem; /* Converted from px-to-rem(8.8px) px-to-rem(16px) */
+            border-top-right-radius: 0.25rem; /* Converted from px-to-rem(4px) */
+            border-bottom-right-radius: 0.25rem;
             cursor: pointer;
 
             &:hover {
@@ -116,17 +112,16 @@ $pink: rgb(252, 212, 232);
           }
         }
       }
-      
     }
   }
 
   .footer-bottom {
     text-align: center;
-    margin-top: px-to-rem(32px); // Converted 2rem
+    margin-top: 2rem; /* Converted from px-to-rem(32px) */
     width: 100%; 
 
     p {
-      font-size: px-to-rem(12.8px); // Converted 0.8rem
+      font-size: 0.8rem; /* Converted from px-to-rem(12.8px) */
     }
   }
 }

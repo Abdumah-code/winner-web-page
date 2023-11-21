@@ -1,13 +1,9 @@
-@function px-to-rem($px, $base-font-size: 16px) {
-  @return #{$px / $base-font-size}rem;
-}
-
 $brand-pink: rgb(252, 212, 232);
 
 .intro-section {
   position: relative;
   width: 100%;
-  height: px-to-rem(824px); // Converted 51.5rem assuming 1rem = 16px
+  height: 51.5rem; /* Converted from px-to-rem(824px) */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,39 +28,39 @@ $brand-pink: rgb(252, 212, 232);
     text-align: center;
 
     .brand-name {
-      font-size: px-to-rem(80px); // Converted 5rem
+      font-size: 5rem; /* Converted from px-to-rem(80px) */
       color: $brand-pink;
       font-weight: 400;
-      line-height: px-to-rem(93px);
-      margin-top: px-to-rem(112px); // Converted 7rem
-      margin-bottom: px-to-rem(-16px); // Converted -1rem
+      line-height: 5.8125rem; /* Converted from px-to-rem(93px) */
+      margin-top: 7rem; /* Converted from px-to-rem(112px) */
+      margin-bottom: -1rem; /* Converted from px-to-rem(-16px) */
       font-family: 'Alex Brush', cursive;
     }
 
     .title {
-      font-size: px-to-rem(112px); // Converted 7rem
+      font-size: 7rem; /* Converted from px-to-rem(112px) */
       color: white;
       font-weight: 700;
-      line-height: px-to-rem(140px);
-      margin-bottom: px-to-rem(16px); // Converted 1rem
+      line-height: 8.75rem; /* Converted from px-to-rem(140px) */
+      margin-bottom: 1rem; /* Converted from px-to-rem(16px) */
     }
 
     .description {
-      font-size: px-to-rem(19.2px); // Converted 1.2rem
+      font-size: 1.2rem; /* Converted from px-to-rem(19.2px) */
       font-weight: 500;
-      line-height: px-to-rem(33px);
+      line-height: 2.0625rem; /* Converted from px-to-rem(33px) */
       color: white;
       width: 60%;
-      margin: 0 auto px-to-rem(32px); // Converted 2rem
+      margin: 0 auto 2rem; /* Converted from px-to-rem(32px) */
     }
 
     .btn-group {
       display: flex;
-      gap: px-to-rem(16px); // Converted 1rem
+      gap: 1rem; /* Converted from px-to-rem(16px) */
       justify-content: center;
 
       .btn {
-        padding: px-to-rem(11.2px) px-to-rem(24px); // Converted 0.7rem and 1.5rem
+        padding: 0.7rem 1.5rem; /* Converted from px-to-rem(11.2px) px-to-rem(24px) */
         border: none;
         cursor: pointer;
         transition: background-color 0.3s, transform 0.3s;
@@ -75,19 +71,19 @@ $brand-pink: rgb(252, 212, 232);
 
           &:hover {
             background-color: darken($brand-pink, 10%);
-            transform: translateY(px-to-rem(-3px));
+            transform: translateY(-0.1875rem); /* Converted from px-to-rem(-3px) */
           }
         }
 
         &.btn-contact {
           background-color: transparent;
-          border: px-to-rem(3.2px) solid $brand-pink; // Converted 2px
+          border: 0.2rem solid $brand-pink; /* Converted from px-to-rem(3.2px) */
           color: $brand-pink;
 
           &:hover {
             background-color: $brand-pink;
             color: white;
-            transform: translateY(px-to-rem(-3px));
+            transform: translateY(-0.1875rem); /* Converted from px-to-rem(-3px) */
           }
         }
       }
@@ -96,7 +92,7 @@ $brand-pink: rgb(252, 212, 232);
 
   @media (max-width: 576px) {
     height: auto; // Adjust height for smaller screens
-    padding: px-to-rem(20px) 0; // Add some padding to the top and bottom
+    padding: 1.25rem 0; /* Converted from px-to-rem(20px) */
 
     .intro-bg {
       width: 400%;
@@ -108,35 +104,35 @@ $brand-pink: rgb(252, 212, 232);
     }
 
     .intro-content {
-      padding: px-to-rem(20px); // Add padding to the content for smaller screens
+      padding: 1.25rem; /* Converted from px-to-rem(20px) */
 
       .brand-name {
-        font-size: px-to-rem(70px); // Reduce font size
-        line-height: px-to-rem(48px); // Adjust line height
-        margin-top: px-to-rem(20px); // Adjust margin
-        margin-bottom: px-to-rem(10px);
+        font-size: 4.375rem; /* Converted from px-to-rem(70px) */
+        line-height: 3rem; /* Converted from px-to-rem(48px) */
+        margin-top: 1.25rem; /* Converted from px-to-rem(20px) */
+        margin-bottom: 0.625rem; /* Converted from px-to-rem(10px) */
       }
 
       .title {
-        font-size: px-to-rem(56px); // Reduce font size
-        line-height: px-to-rem(70px); // Adjust line height
-        margin-bottom: px-to-rem(10px);
+        font-size: 3.5rem; /* Converted from px-to-rem(56px) */
+        line-height: 4.375rem; /* Converted from px-to-rem(70px) */
+        margin-bottom: 0.625rem; /* Converted from px-to-rem(10px) */
       }
 
       .description {
-        font-size: px-to-rem(16px); // Reduce font size
-        line-height: px-to-rem(24px); // Adjust line height
+        font-size: 1rem; /* Converted from px-to-rem(16px) */
+        line-height: 1.5rem; /* Converted from px-to-rem(24px) */
         width: 80%; // Increase width for better readability
-        margin-bottom: px-to-rem(20px);
+        margin-bottom: 1.25rem; /* Converted from px-to-rem(20px) */
       }
 
       .btn-group {
         flex-direction: column; // Stack buttons vertically
-        gap: px-to-rem(10px);
+        gap: 0.625rem; /* Converted from px-to-rem(10px) */
 
         .btn {
-          padding: px-to-rem(8px) px-to-rem(16px); // Adjust padding
-          font-size: px-to-rem(14px); // Adjust font size if needed
+          padding: 0.5rem 1rem; /* Converted from px-to-rem(8px) px-to-rem(16px) */
+          font-size: 0.875rem; /* Adjust font size if needed */
         }
       }
     }
