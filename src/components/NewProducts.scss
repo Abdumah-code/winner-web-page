@@ -15,7 +15,7 @@ $brand-pink: rgb(252, 212, 232);
   
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(3, px-to-rem(480px)); // Converted 30rem assuming 1rem = 16px
+      grid-template-columns: repeat(3, px-to-rem(460px)); // Converted 30rem assuming 1rem = 16px
       gap: px-to-rem(16px); // Converted 1rem
       justify-content: center;
       margin-top: px-to-rem(16px); // Converted 1rem
