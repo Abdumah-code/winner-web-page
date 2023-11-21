@@ -38,13 +38,13 @@ const IntroSection = ({ language }) => {
       <div className="intro-bg">
         <Slider {...settings}>
           <div>
-            <img src="/wow.jpg" alt="Lash Studio Background 1" />
+            <img src="./wow.jpg" alt="Lash Studio Background 1" />
           </div>
           <div>
-            <img src="/tow.jpg" alt="Lash Studio Background 2" />
+            <img src="./tow.jpg" alt="Lash Studio Background 2" />
           </div>
           <div>
-            <img src="/off.jpg" alt="Lash Studio Background 3" />
+            <img src="./off.jpg" alt="Lash Studio Background 3" />
           </div>
         </Slider>
       </div>

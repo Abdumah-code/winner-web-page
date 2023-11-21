@@ -4,20 +4,20 @@ import './NewProducts.scss';
 const NewProducts = ({ language }) => {
   const productsInfo = {
     En: [
-      { name: '/8D-exaple.png', desc: 'U/DD bent', price: 1235 },
-      { name: '/8D-exaple.png', desc: 'U/DD bent', price: 1235 },
-      { name: '/8D-exaple.png', desc: 'U/DD bent', price: 1235 },
-      { name: '/8D-exaple.png', desc: 'U/DD bent', price: 1235 },
-      { name: '/8D-exaple.png', desc: 'U/DD bent', price: 1235 },
-      { name: '/8D-exaple.png', desc: 'U/DD bent', price: 1235 },
+      { name: './8D-exaple.png', desc: 'U/DD bent', price: 1235 },
+      { name: './8D-exaple.png', desc: 'U/DD bent', price: 1235 },
+      { name: './8D-exaple.png', desc: 'U/DD bent', price: 1235 },
+      { name: './8D-exaple.png', desc: 'U/DD bent', price: 1235 },
+      { name: './8D-exaple.png', desc: 'U/DD bent', price: 1235 },
+      { name: './8D-exaple.png', desc: 'U/DD bent', price: 1235 },
     ],
     Se: [
-      { name: '/8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
-      { name: '/8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
-      { name: '/8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
-      { name: '/8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
-      { name: '/8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
-      { name: '/8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
+      { name: './8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
+      { name: './8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
+      { name: './8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
+      { name: './8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
+      { name: './8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
+      { name: './8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
     ],
   };
 
@@ -38,7 +38,7 @@ const NewProducts = ({ language }) => {
       <div className="product-grid">
         {productsInfo[language].map((product, index) => (
           <div key={index} className="product-card">
-            <img src={`/8D-exaple.png`} alt={product.name} />
+            <img src={`./8D-exaple.png`} alt={product.name} />
             <h3>{product.name}</h3>
             <p>{product.desc}</p>
             <p>{`${convertCurrency(product.price, language)} ${language === 'En' ? '€' : 'kr'}`}</p>

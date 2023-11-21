@@ -6,14 +6,14 @@ import "slick-carousel/slick/slick-theme.css";
 
 const categories = {
   En: [
-    { image: '/8D-exaple.png', label: '8D Finished volume lashes' },
-    { image: '/8D-exaple.png', label: '14D finished volume lashes' },
-    { image: '/8D-exaple.png', label: '3D finished volume lashes' },
+    { image: './8D-exaple.png', label: '8D Finished volume lashes' },
+    { image: './8D-exaple.png', label: '14D finished volume lashes' },
+    { image: './8D-exaple.png', label: '3D finished volume lashes' },
   ],
   Se: [
-    { image: '/8D-exaple.png', label: '8D Färdiga volymfransar' },
-    { image: '/8D-exaple.png', label: '14D färdiga volymfransar' },
-    { image: '/8D-exaple.png', label: '3D färdiga volymfransar' },
+    { image: './8D-exaple.png', label: '8D Färdiga volymfransar' },
+    { image: './8D-exaple.png', label: '14D färdiga volymfransar' },
+    { image: './8D-exaple.png', label: '3D färdiga volymfransar' },
   ]
 };
 
