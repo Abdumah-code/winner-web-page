@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/winner-web-page/static/css/main.fcc6be9f.css",
-    "main.js": "/winner-web-page/static/js/main.fd57c015.js",
+    "main.js": "/winner-web-page/static/js/main.f4cf1fdc.js",
     "static/js/787.8022bd82.chunk.js": "/winner-web-page/static/js/787.8022bd82.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/winner-web-page/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/winner-web-page/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -14,11 +14,11 @@
     "static/media/slick.woff": "/winner-web-page/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/winner-web-page/index.html",
     "main.fcc6be9f.css.map": "/winner-web-page/static/css/main.fcc6be9f.css.map",
-    "main.fd57c015.js.map": "/winner-web-page/static/js/main.fd57c015.js.map",
+    "main.f4cf1fdc.js.map": "/winner-web-page/static/js/main.f4cf1fdc.js.map",
     "787.8022bd82.chunk.js.map": "/winner-web-page/static/js/787.8022bd82.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fcc6be9f.css",
-    "static/js/main.fd57c015.js"
+    "static/js/main.f4cf1fdc.js"
   ]
 }
