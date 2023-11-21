@@ -8,6 +8,7 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: black;
+      box-sizing: border-box;
   }
   
   .header {
@@ -18,6 +19,7 @@
       background-color: #fff;
       height: px-to-rem(64px);
       width: 100%;
+      box-sizing: border-box;
   
       a {
           text-decoration: none;
