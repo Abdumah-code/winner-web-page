@@ -41,7 +41,7 @@ const IntroSection = ({ language }) => {
             <img src="/wow.jpg" alt="Lash Studio Background 1" />
           </div>
           <div>
-            <img src="/2.jpg" alt="Lash Studio Background 2" />
+            <img src="/tow.jpg" alt="Lash Studio Background 2" />
           </div>
           <div>
             <img src="/off.jpg" alt="Lash Studio Background 3" />
