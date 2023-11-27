@@ -35,6 +35,7 @@ const IntroSection = ({ language }) => {
 
   return (
     <div className="intro-section">
+      (code for Github)
       <div className="intro-bg">
         <Slider {...settings}>
           <div>
@@ -48,6 +49,21 @@ const IntroSection = ({ language }) => {
           </div>
         </Slider>
       </div>
+
+      {/* (code for Computer)
+      <div className="intro-bg">
+        <Slider {...settings}>
+          <div>
+            <img src="/public/wow.jpg" alt="Lash Studio Background 1" />
+          </div>
+          <div>
+            <img src="/build/off.jpg" alt="Lash Studio Background 2" />
+          </div>
+          <div>
+            <img src="/build/tow.jpg" alt="Lash Studio Background 3" />
+          </div>
+        </Slider>
+      </div> */}
       <div className="intro-content">
       <h2 className="brand-name">Winner</h2>
         <h1 className="title">LASH STUDIOS</h1>

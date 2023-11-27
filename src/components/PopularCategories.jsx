@@ -4,6 +4,7 @@ import './PopularCategories.scss';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+//code for images to work on Github
 const categories = {
   En: [
     { image: './8D-exaple.png', label: '8D Finished volume lashes' },
@@ -16,6 +17,20 @@ const categories = {
     { image: './8D-exaple.png', label: '3D färdiga volymfransar' },
   ]
 };
+
+//code for images to work on Compute
+// const categories = {
+//   En: [
+//     { image: '/8D-exaple.png', label: '8D Finished volume lashes' },
+//     { image: '/8D-exaple.png', label: '14D finished volume lashes' },
+//     { image: '/8D-exaple.png', label: '3D finished volume lashes' },
+//   ],
+//   Se: [
+//     { image: '/8D-exaple.png', label: '8D Färdiga volymfransar' },
+//     { image: '/8D-exaple.png', label: '14D färdiga volymfransar' },
+//     { image: '/8D-exaple.png', label: '3D färdiga volymfransar' },
+//   ]
+// };
 
 const PopularCategories = ({ language }) => {
   const settings = {
