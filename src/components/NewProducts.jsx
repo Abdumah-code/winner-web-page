@@ -60,7 +60,7 @@ const NewProducts = ({ language }) => {
         {productsInfo[language].map((product, index) => (
           <div key={index} className="product-card">
             (change to the point when testing onnGithub)
-            <img src={`./8D-exaple.png`} alt={product.name} />
+            <img src={process.env.PUBLIC_URL + `./8D-exaple.png`} alt={product.name} />
             <h3>{product.name}</h3>
             <p>{product.desc}</p>
             <p>{`${convertCurrency(product.price, language)} ${language === 'En' ? '€' : 'kr'}`}</p>
