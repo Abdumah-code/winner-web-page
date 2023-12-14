@@ -35,11 +35,11 @@ const IntroSection = ({ language }) => {
 
   return (
     <div className="intro-section">
-      (code for Github)
+      {/* code for Github */}
       <div className="intro-bg">
         <Slider {...settings}>
           <div>
-            <img src="./wow.jpg" alt="Lash Studio Background 1" />
+            <img src= "./wow.jpg" alt="Lash Studio Background 1" />
           </div>
           <div>
             <img src="./tow.jpg" alt="Lash Studio Background 2" />
@@ -50,17 +50,17 @@ const IntroSection = ({ language }) => {
         </Slider>
       </div>
 
-      {/* (code for Computer)
-      <div className="intro-bg">
+      {/* code for Computer */}
+      {/* <div className="intro-bg">
         <Slider {...settings}>
           <div>
-            <img src="/public/wow.jpg" alt="Lash Studio Background 1" />
+          <img src= {process.env.PUBLIC_URL + "/wow.jpg"} alt="Lash Studio Background 1" />
           </div>
           <div>
-            <img src="/build/off.jpg" alt="Lash Studio Background 2" />
+          <img src= {process.env.PUBLIC_URL + "/off.jpg"} alt="Lash Studio Background 1" />
           </div>
           <div>
-            <img src="/build/tow.jpg" alt="Lash Studio Background 3" />
+          <img src= {process.env.PUBLIC_URL + "/tow.jpg"} alt="Lash Studio Background 1" />
           </div>
         </Slider>
       </div> */}
