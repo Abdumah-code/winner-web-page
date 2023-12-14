@@ -3,44 +3,44 @@ import './NewProducts.scss';
 
 const NewProducts = ({ language }) => {
   // code for Github
-  const productsInfo = {
-    En: [
-      { name: './8D-exaple.png', desc: 'U/DD bent', price: 1235 },
-      { name: './8D-exaple.png', desc: 'U/DD bent', price: 1235 },
-      { name: './8D-exaple.png', desc: 'U/DD bent', price: 1235 },
-      { name: './8D-exaple.png', desc: 'U/DD bent', price: 1235 },
-      { name: './8D-exaple.png', desc: 'U/DD bent', price: 1235 },
-      { name: './8D-exaple.png', desc: 'U/DD bent', price: 1235 },
-    ],
-    Se: [
-      { name: './8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
-      { name: './8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
-      { name: './8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
-      { name: './8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
-      { name: './8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
-      { name: './8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
-    ],
-  };
-
-  //code for Computer
   // const productsInfo = {
   //   En: [
-  //     { name: '/8D-exaple.png', desc: 'U/DD bent', price: 1235 },
-  //     { name: '/8D-exaple.png', desc: 'U/DD bent', price: 1235 },
-  //     { name: '/8D-exaple.png', desc: 'U/DD bent', price: 1235 },
-  //     { name: '/8D-exaple.png', desc: 'U/DD bent', price: 1235 },
-  //     { name: '/8D-exaple.png', desc: 'U/DD bent', price: 1235 },
-  //     { name: '/8D-exaple.png', desc: 'U/DD bent', price: 1235 },
+  //     { name: './8D-exaple.png', desc: 'U/DD bent', price: 1235 },
+  //     { name: './8D-exaple.png', desc: 'U/DD bent', price: 1235 },
+  //     { name: './8D-exaple.png', desc: 'U/DD bent', price: 1235 },
+  //     { name: './8D-exaple.png', desc: 'U/DD bent', price: 1235 },
+  //     { name: './8D-exaple.png', desc: 'U/DD bent', price: 1235 },
+  //     { name: './8D-exaple.png', desc: 'U/DD bent', price: 1235 },
   //   ],
   //   Se: [
-  //     { name: '/8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
-  //     { name: '/8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
-  //     { name: '/8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
-  //     { name: '/8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
-  //     { name: '/8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
-  //     { name: '/8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
+  //     { name: './8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
+  //     { name: './8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
+  //     { name: './8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
+  //     { name: './8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
+  //     { name: './8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
+  //     { name: './8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
   //   ],
   // };
+
+  //code for Computer
+  const productsInfo = {
+    En: [
+      { name: '/8D-exaple.png', desc: 'U/DD bent', price: 1235 },
+      { name: '/8D-exaple.png', desc: 'U/DD bent', price: 1235 },
+      { name: '/8D-exaple.png', desc: 'U/DD bent', price: 1235 },
+      { name: '/8D-exaple.png', desc: 'U/DD bent', price: 1235 },
+      { name: '/8D-exaple.png', desc: 'U/DD bent', price: 1235 },
+      { name: '/8D-exaple.png', desc: 'U/DD bent', price: 1235 },
+    ],
+    Se: [
+      { name: '/8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
+      { name: '/8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
+      { name: '/8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
+      { name: '/8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
+      { name: '/8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
+      { name: '/8D-exaple.png', desc: 'U/DD böjd', price: 12350 },
+    ],
+  };
 
   const buttonText = {
     En: { getStarted: 'Get Started', seeAll: 'See All' },
@@ -60,7 +60,7 @@ const NewProducts = ({ language }) => {
         {productsInfo[language].map((product, index) => (
           <div key={index} className="product-card">
             (change to the point when testing onnGithub)
-            <img src={process.env.PUBLIC_URL + `./8D-exaple.png`} alt={product.name} />
+            <img src={process.env.PUBLIC_URL + `/8D-exaple.png`} alt={product.name} />
             <h3>{product.name}</h3>
             <p>{product.desc}</p>
             <p>{`${convertCurrency(product.price, language)} ${language === 'En' ? '€' : 'kr'}`}</p>
