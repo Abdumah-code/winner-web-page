@@ -59,7 +59,7 @@ const NewProducts = ({ language }) => {
       <div className="product-grid">
         {productsInfo[language].map((product, index) => (
           <div key={index} className="product-card">
-            {/* (change to the point ? delete process.env.PUBLIC_URL when testing on Github) */}
+            {/* (change to the `./8D-exaple.png` ? delete process.env.PUBLIC_URL + when testing on Github) */}
             <img src={`./8D-exaple.png`} alt={product.name} />
             <h3>{product.name}</h3>
             <p>{product.desc}</p>

@@ -4,7 +4,7 @@ import './PopularCategories.scss';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-//code for images to work on Github
+//code for Github
 const categories = {
   En: [
     { image: './8D-exaple.png', label: '8D Finished volume lashes' },
@@ -18,7 +18,7 @@ const categories = {
   ]
 };
 
-//code for images to work on Compute
+//code for Computer
 // const categories = {
 //   En: [
 //     { image: process.env.PUBLIC_URL + '/8D-exaple.png', label: '8D Finished volume lashes' },

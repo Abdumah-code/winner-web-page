@@ -64,6 +64,7 @@ const IntroSection = ({ language }) => {
           </div>
         </Slider>
       </div> */}
+      
       <div className="intro-content">
       <h2 className="brand-name">Winner</h2>
         <h1 className="title">LASH STUDIOS</h1>

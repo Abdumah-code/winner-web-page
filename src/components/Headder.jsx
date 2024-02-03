@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Header.scss';
 
-const Header = ({ language, setLanguage }) => {
+const Header = ({ language, setLanguage, setCurrentPage }) => {
     const [searchTerm, setSearchTerm] = useState('');
 
     const SearchText = {
@@ -10,18 +10,22 @@ const Header = ({ language, setLanguage }) => {
     };
 
     const navLinks = {
-        En: ['Home', 'About', 'Gallery', 'News'],
-        Se: ['Hemma', 'Om oss', 'Galleri', 'Nyheter'],
+        En: ['Home', 'About', 'Products', 'Services'],
+        Se: ['Hemma', 'Om oss', 'Produkter', 'Tjänster'],
     };
 
     const handleSearch = () => {
         console.log(`Searching for: ${searchTerm}`);
     };
 
+    const handleNavClick = (page) => {
+        setCurrentPage(page);
+    };
+
     return (
         <div className="header">
-            <a href="index.html">
-                <div className="logo">
+            <a href="#home" onClick={() => handleNavClick('home')}>
+                    <div className="logo">
                     <div className="logo-winner">WINNER</div>
                     <div className="logo-lash-studios">LASH STUDIOS</div>
                 </div>
@@ -37,7 +41,15 @@ const Header = ({ language, setLanguage }) => {
             </div>
 
             <nav className="nav-links">
-                {navLinks[language].map((link, idx) => <a href={'/' + link.toLowerCase()} key={idx}>{link}</a>)}
+            {navLinks[language].map((link, idx) => (
+                    <button
+                        onClick={() => handleNavClick(link.toLowerCase())}
+                        key={idx}
+                        className="nav-button"
+                    >
+                        {link}
+                    </button>
+                ))}
             </nav>
 
             <div className="icons">

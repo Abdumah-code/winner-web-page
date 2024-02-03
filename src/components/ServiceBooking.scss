@@ -1,0 +1,126 @@
+.service-booking {
+    padding: 1rem;
+    color: #444;
+    background-color: #fff;
+
+    .service-headers {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr auto;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        background-color: #f2f2f2;
+        margin-bottom: 1rem;
+        border-radius: 0.25rem;
+    
+        .header-name, .header-duration, .header-price, .header-book {
+          text-align: left;
+        }
+    
+        .header-book {
+          text-align: right;
+        }
+      }
+  
+    .service-group {
+      margin-bottom: 1rem;
+  
+      .service-group-title {
+        background-color: #f2f2f2;
+        padding: 0.75rem 1.25rem;
+        border: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        font-size: 1.25rem; // Larger font size for category titles
+        font-weight: bold; // Bold font weight for category titles
+        transition: background-color 0.3s ease;
+        border-radius: 0.25rem; // Rounded corners for the titles
+        margin-bottom: 0.5rem; // Spacing between title and list
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .toggle-icon {
+            line-height: 1; // Ensure the icon is vertically centered
+            font-size: 1.5rem; // Size of the toggle icon
+          }
+  
+        &:hover {
+          background-color: #e8e8e8; // Slightly darker on hover
+        }
+  
+        &:after {
+        //   content: '+';
+          float: right;
+          font-size: 1.5rem; // Larger icon size
+          line-height: 0; // Align icon with the middle of the text
+        }
+  
+        &.expanded:after {
+          content: '-';
+        }
+      }
+  
+      .service-list {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+  
+        &.expanded {
+          max-height: 1000px; // Adjust based on your content
+          padding-left: 1.25rem; // Indent the services to visually nest under the category
+        }
+      }
+  
+      .service-item {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr auto;
+        gap: 1rem;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid #ddd;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        h2 {
+          margin: 0;
+          grid-column: 1;
+        }
+
+        p {
+          margin: 0;
+          &:first-of-type {
+            grid-column: 2;
+            text-align: left;
+          }
+          &:last-of-type {
+            grid-column: 3;
+            text-align: left;
+          }
+        }
+        
+        button {
+            grid-column: 4;
+            justify-self: end;
+            padding: 0.25rem 0.75rem;
+            background-color: #5cb85c; // Use a brand color for buttons
+            color: white;
+            border-radius: 0.25rem; // Rounded corners for buttons
+            cursor: pointer;
+            border: none;
+    
+            &:hover {
+                background-color: #4cae4c; // Darker background on hover
+            }
+    
+            &:disabled {
+                background-color: #ccc; // Disabled state color
+            }
+        }
+      }
+    }
+  }
+  
