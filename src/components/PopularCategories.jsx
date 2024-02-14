@@ -5,32 +5,32 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 //code for Github
-// const categories = {
-//   En: [
-//     { image: './8D-exaple.png', label: '8D Finished volume lashes' },
-//     { image: './8D-exaple.png', label: '14D finished volume lashes' },
-//     { image: './8D-exaple.png', label: '3D finished volume lashes' },
-//   ],
-//   Se: [
-//     { image: './8D-exaple.png', label: '8D Färdiga volymfransar' },
-//     { image: './8D-exaple.png', label: '14D färdiga volymfransar' },
-//     { image: './8D-exaple.png', label: '3D färdiga volymfransar' },
-//   ]
-// };
-
-//code for Computer
 const categories = {
   En: [
-    { image: process.env.PUBLIC_URL + '/8D-exaple.png', label: '8D Finished volume lashes' },
-    { image: process.env.PUBLIC_URL + '/8D-exaple.png', label: '14D finished volume lashes' },
-    { image: process.env.PUBLIC_URL + '/8D-exaple.png', label: '3D finished volume lashes' },
+    { image: './8D-exaple.png', label: '8D Finished volume lashes' },
+    { image: './8D-exaple.png', label: '14D finished volume lashes' },
+    { image: './8D-exaple.png', label: '3D finished volume lashes' },
   ],
   Se: [
-    { image: process.env.PUBLIC_URL + '/8D-exaple.png', label: '8D Färdiga volymfransar' },
-    { image: process.env.PUBLIC_URL + '/8D-exaple.png', label: '14D färdiga volymfransar' },
-    { image: process.env.PUBLIC_URL + '/8D-exaple.png', label: '3D färdiga volymfransar' },
+    { image: './8D-exaple.png', label: '8D Färdiga volymfransar' },
+    { image: './8D-exaple.png', label: '14D färdiga volymfransar' },
+    { image: './8D-exaple.png', label: '3D färdiga volymfransar' },
   ]
 };
+
+//code for Computer
+// const categories = {
+//   En: [
+//     { image: process.env.PUBLIC_URL + '/8D-exaple.png', label: '8D Finished volume lashes' },
+//     { image: process.env.PUBLIC_URL + '/8D-exaple.png', label: '14D finished volume lashes' },
+//     { image: process.env.PUBLIC_URL + '/8D-exaple.png', label: '3D finished volume lashes' },
+//   ],
+//   Se: [
+//     { image: process.env.PUBLIC_URL + '/8D-exaple.png', label: '8D Färdiga volymfransar' },
+//     { image: process.env.PUBLIC_URL + '/8D-exaple.png', label: '14D färdiga volymfransar' },
+//     { image: process.env.PUBLIC_URL + '/8D-exaple.png', label: '3D färdiga volymfransar' },
+//   ]
+// };
 
 
 const PopularCategories = ({ language }) => {

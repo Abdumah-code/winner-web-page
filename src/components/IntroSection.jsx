@@ -36,7 +36,7 @@ const IntroSection = ({ language }) => {
   return (
     <div className="intro-section">
       {/* code for Github */}
-      {/* <div className="intro-bg">
+      <div className="intro-bg">
         <Slider {...settings}>
           <div>
             <img src= "./wow.jpg" alt="Lash Studio Background 1" />
@@ -48,10 +48,10 @@ const IntroSection = ({ language }) => {
             <img src="./off.jpg" alt="Lash Studio Background 3" />
           </div>
         </Slider>
-      </div> */}
+      </div>
 
       {/* code for Computer */}
-      <div className="intro-bg">
+      {/* <div className="intro-bg">
         <Slider {...settings}>
           <div>
           <img src= {process.env.PUBLIC_URL + "/wow.jpg"} alt="Lash Studio Background 1" />
@@ -63,7 +63,7 @@ const IntroSection = ({ language }) => {
           <img src= {process.env.PUBLIC_URL + "/tow.jpg"} alt="Lash Studio Background 1" />
           </div>
         </Slider>
-      </div>
+      </div> */}
       
       <div className="intro-content">
       <h2 className="brand-name">Winner</h2>

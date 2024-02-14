@@ -62,10 +62,14 @@ $pink: rgb(252, 212, 232);
           font-size: 1.2rem; /* Converted from px-to-rem(19.2px) */
         }
 
-        a {
+        button {
+          background: none;
+          border: none;
           color: #fff;
-          margin-bottom: 0.5rem; /* Converted from px-to-rem(8px) */
+          margin-bottom: 0.5rem; // Converted from px-to-rem(8px)
           text-decoration: none;
+          font: inherit;
+          cursor: pointer;
 
           &:hover {
             text-decoration: underline;

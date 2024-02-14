@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.scss';
 import 'font-awesome/css/font-awesome.min.css';
 
-const Footer = ({ language }) => {
+const Footer = ({ language, setCurrentPage }) => {
   const content = {
     En: {
       linksTitle: 'Links',
@@ -22,6 +22,10 @@ const Footer = ({ language }) => {
       copyright: '© 2023 AM Webbutecklings AB',
       subscribe: 'Prenumerera',
     }
+  };
+
+  const handleFootClick = (page) => {
+    setCurrentPage(page);
   };
 
   const { linksTitle, servicesTitle, newsletterTitle, links, services, copyright, subscribe } = content[language];
@@ -44,10 +48,24 @@ const Footer = ({ language }) => {
         </div>
 
         <div className="footer-links">
-          <div className="links">
+        <div className="links">
             <strong>{linksTitle}</strong>
-            {links.map((link, idx) => <a href={'/' + link.toLowerCase()} key={idx}>{link}</a>)}
+            {links.map((link, idx) => (
+              <button
+                onClick={() => {
+                  // Convert link text to a format suitable for setCurrentPage
+                  // This example assumes link texts are directly mappable to page identifiers
+                  const pageIdentifier = link.toLowerCase().replace(/\s+/g, '-');
+                  setCurrentPage(pageIdentifier);
+                }}
+                key={idx}
+                className="nav-button"
+              >
+                {link}
+              </button>
+            ))}
           </div>
+
           {/* <div className="services">
             <strong>{servicesTitle}</strong>
             {services.map((service, idx) => <a href={'/' + service.toLowerCase().replace(/\s+/g, '-') } key={idx}>{service}</a>)}

@@ -12,7 +12,12 @@ function App() {
     const [currentPage, setCurrentPage] = useState('home');
 
     const renderPage = () => {
-        switch (currentPage) {
+      let pageKey = currentPage;
+      if (currentPage === 'tjänster') {
+        pageKey = 'services'; // Convert 'tjänster' to 'services'
+      }
+
+        switch (pageKey) {
           case 'services':
             return <ServiceBooking language={language} />;
           // Add cases for other pages if needed
@@ -31,7 +36,7 @@ function App() {
         <div className="App">
             <Header language={language} setLanguage={setLanguage} setCurrentPage={setCurrentPage} />
             {renderPage()}
-            <Footer language={language} />
+            <Footer language={language} setLanguage={setLanguage} setCurrentPage={setCurrentPage} />
         </div>
     );
 }
