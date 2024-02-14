@@ -157,88 +157,88 @@ const servicesList = [
    { category: "Mega Doll lash", name: "Mini påfyllning Mega doll lash", duration: "30 minuter", price: "363 kr" },
    { category: "Mega Doll lash", name: "Stor påfyllning Mega doll lash", duration: "105 minuter", price: "689 kr" },
 
-// Mix fransar services
-{ category: "Mix fransar", name: "Mix fransar", duration: "120 minuter", price: "689 kr" },
-{ category: "Mix fransar", name: "Mini påfyllning Mix fransar", duration: "30 minuter", price: "324 kr" },
-{ category: "Mix fransar", name: "Mix påfyllning v.4-5", duration: "90 minuter", price: "514 kr" },
-{ category: "Mix fransar", name: "På fyllning Mix v2", duration: "90 minuter", price: "454 kr" },
-{ category: "Mix fransar", name: "På fyllning Mix v 3", duration: "90 minuter", price: "469 kr" },
-{ category: "Mix fransar", name: "Stor påfyllning Mix fransar", duration: "105 minuter", price: "569 kr" },
+   // Mix fransar services
+   { category: "Mix fransar", name: "Mix fransar", duration: "120 minuter", price: "689 kr" },
+   { category: "Mix fransar", name: "Mini påfyllning Mix fransar", duration: "30 minuter", price: "324 kr" },
+   { category: "Mix fransar", name: "Mix påfyllning v.4-5", duration: "90 minuter", price: "514 kr" },
+   { category: "Mix fransar", name: "På fyllning Mix v2", duration: "90 minuter", price: "454 kr" },
+   { category: "Mix fransar", name: "På fyllning Mix v 3", duration: "90 minuter", price: "469 kr" },
+   { category: "Mix fransar", name: "Stor påfyllning Mix fransar", duration: "105 minuter", price: "569 kr" },
 
-// My favourite services
-{ category: "My favourite", name: "My favourite", duration: "120 minuter", price: "888 kr" },
-{ category: "My favourite", name: "My favourite Mini påfyllning", duration: "30 minuter", price: "415 kr" },
-{ category: "My favourite", name: "My favourite Påfyllning v.2", duration: "90 minuter", price: "469 kr" },
-{ category: "My favourite", name: "My favourite Påfyllning v.3", duration: "90 minuter", price: "569 kr" },
-{ category: "My favourite", name: "My favourite Påfyllning v.4-5", duration: "90 minuter", price: "689 kr" },
-{ category: "My favourite", name: "My favourite Stor påfyllning", duration: "105 minuter", price: "789 kr" },
+   // My favourite services
+   { category: "My favourite", name: "My favourite", duration: "120 minuter", price: "888 kr" },
+   { category: "My favourite", name: "My favourite Mini påfyllning", duration: "30 minuter", price: "415 kr" },
+   { category: "My favourite", name: "My favourite Påfyllning v.2", duration: "90 minuter", price: "469 kr" },
+   { category: "My favourite", name: "My favourite Påfyllning v.3", duration: "90 minuter", price: "569 kr" },
+   { category: "My favourite", name: "My favourite Påfyllning v.4-5", duration: "90 minuter", price: "689 kr" },
+   { category: "My favourite", name: "My favourite Stor påfyllning", duration: "105 minuter", price: "789 kr" },
 
-// Pick test för er som är känsliga ögon service
-{ category: "Pick test för er som är känsliga ögon", name: "Pick test för er som är känsliga ögon", duration: "5 minuter", price: "Kostnadsfri" },
+   // Pick test för er som är känsliga ögon service
+   { category: "Pick test för er som är känsliga ögon", name: "Pick test för er som är känsliga ögon", duration: "5 minuter", price: "Kostnadsfri" },
 
-// Pinky baby services
-{ category: "Pinky baby", name: "Pinky baby", duration: "120 minuter", price: "888 kr" },
-{ category: "Pinky baby", name: "Mini påfyllning Pinky baby", duration: "30 minuter", price: "415 kr" },
-{ category: "Pinky baby", name: "Pinky baby påfyllning v.3", duration: "90 minuter", price: "569 kr" },
-{ category: "Pinky baby", name: "Pinky baby påfyllning v.2", duration: "90 minuter", price: "469 kr" },
-{ category: "Pinky baby", name: "Pinky baby påfyllning v.4-5", duration: "90 minuter", price: "689 kr" },
-{ category: "Pinky baby", name: "Stor påfyllning Pinky baby", duration: "105 minuter", price: "789 kr" },
+   // Pinky baby services
+   { category: "Pinky baby", name: "Pinky baby", duration: "120 minuter", price: "888 kr" },
+   { category: "Pinky baby", name: "Mini påfyllning Pinky baby", duration: "30 minuter", price: "415 kr" },
+   { category: "Pinky baby", name: "Pinky baby påfyllning v.3", duration: "90 minuter", price: "569 kr" },
+   { category: "Pinky baby", name: "Pinky baby påfyllning v.2", duration: "90 minuter", price: "469 kr" },
+   { category: "Pinky baby", name: "Pinky baby påfyllning v.4-5", duration: "90 minuter", price: "689 kr" },
+   { category: "Pinky baby", name: "Stor påfyllning Pinky baby", duration: "105 minuter", price: "789 kr" },
 
-// Russian foxy services
-{ category: "Russian foxy", name: "Russian foxy", duration: "120 minuter", price: "888 kr" },
-{ category: "Russian foxy", name: "Mini påfyllning Russian foxy lash", duration: "30 minuter", price: "415 kr" },
-{ category: "Russian foxy", name: "Russian foxy påfyllning v.4-5", duration: "90 minuter", price: "689 kr" },
-{ category: "Russian foxy", name: "Russian foxy påfyllning v.3", duration: "90 minuter", price: "569 kr" },
-{ category: "Russian foxy", name: "Russian foxy påfyllning v.2", duration: "90 minuter", price: "469 kr" },
-{ category: "Russian foxy", name: "Stor påfyllning Russian Foxy", duration: "105 minuter", price: "789 kr" },
+   // Russian foxy services
+   { category: "Russian foxy", name: "Russian foxy", duration: "120 minuter", price: "888 kr" },
+   { category: "Russian foxy", name: "Mini påfyllning Russian foxy lash", duration: "30 minuter", price: "415 kr" },
+   { category: "Russian foxy", name: "Russian foxy påfyllning v.4-5", duration: "90 minuter", price: "689 kr" },
+   { category: "Russian foxy", name: "Russian foxy påfyllning v.3", duration: "90 minuter", price: "569 kr" },
+   { category: "Russian foxy", name: "Russian foxy påfyllning v.2", duration: "90 minuter", price: "469 kr" },
+   { category: "Russian foxy", name: "Stor påfyllning Russian Foxy", duration: "105 minuter", price: "789 kr" },
 
-// Russian volume services
-{ category: "Russian volume", name: "Russian volume", duration: "120 minuter", price: "789 kr" },
-{ category: "Russian volume", name: "Mini påfyllning Russian volym", duration: "30 minuter", price: "363 kr" },
-{ category: "Russian volume", name: "På fyllning Russian volym v.3", duration: "90 minuter", price: "636 kr" },
-{ category: "Russian volume", name: "Påfyllning Russian volym v.2", duration: "90 minuter", price: "456 kr" },
-{ category: "Russian volume", name: "Russian volym påfyllning v.4-5", duration: "90 minuter", price: "636 kr" },
-{ category: "Russian volume", name: "Stor påfyllning Russian volym", duration: "105 minuter", price: "689 kr" },
+   // Russian volume services
+   { category: "Russian volume", name: "Russian volume", duration: "120 minuter", price: "789 kr" },
+   { category: "Russian volume", name: "Mini påfyllning Russian volym", duration: "30 minuter", price: "363 kr" },
+   { category: "Russian volume", name: "På fyllning Russian volym v.3", duration: "90 minuter", price: "636 kr" },
+   { category: "Russian volume", name: "Påfyllning Russian volym v.2", duration: "90 minuter", price: "456 kr" },
+   { category: "Russian volume", name: "Russian volym påfyllning v.4-5", duration: "90 minuter", price: "636 kr" },
+   { category: "Russian volume", name: "Stor påfyllning Russian volym", duration: "105 minuter", price: "689 kr" },
 
-// Russian volym services (duplicate name, but different duration)
-{ category: "Russian volume", name: "Russian volym", duration: "120 minuter", price: "789 kr" },
+   // Russian volym services (duplicate name, but different duration)
+   { category: "Russian volume", name: "Russian volym", duration: "120 minuter", price: "789 kr" },
 
-// Summer services
-{ category: "Summer", name: "Summer", duration: "120 minuter", price: "324 kr" },
-{ category: "Summer", name: "Summer påfyllning v.2", duration: "90 minuter", price: "242 kr" },
-{ category: "Summer", name: "Summer påfyllning v.3", duration: "90 minuter", price: "289 kr" },
+   // Summer services
+   { category: "Summer", name: "Summer", duration: "120 minuter", price: "324 kr" },
+   { category: "Summer", name: "Summer påfyllning v.2", duration: "90 minuter", price: "242 kr" },
+   { category: "Summer", name: "Summer påfyllning v.3", duration: "90 minuter", price: "289 kr" },
 
-// Winnie services
-{ category: "Winnie", name: "Winnie", duration: "120 minuter", price: "888 kr" },
-{ category: "Winnie", name: "Mini påfyllning Winnie lash", duration: "30 minuter", price: "415 kr" },
-{ category: "Winnie", name: "Stor påfyllning Winnie", duration: "105 minuter", price: "789 kr" },
-{ category: "Winnie", name: "Winnie påfyllning v.2", duration: "90 minuter", price: "469 kr" },
-{ category: "Winnie", name: "Winnie påfyllning v.3", duration: "90 minuter", price: "569 kr" },
-{ category: "Winnie", name: "Winnie påfyllning v.4-5", duration: "90 minuter", price: "789 kr" },
+   // Winnie services
+   { category: "Winnie", name: "Winnie", duration: "120 minuter", price: "888 kr" },
+   { category: "Winnie", name: "Mini påfyllning Winnie lash", duration: "30 minuter", price: "415 kr" },
+   { category: "Winnie", name: "Stor påfyllning Winnie", duration: "105 minuter", price: "789 kr" },
+   { category: "Winnie", name: "Winnie påfyllning v.2", duration: "90 minuter", price: "469 kr" },
+   { category: "Winnie", name: "Winnie påfyllning v.3", duration: "90 minuter", price: "569 kr" },
+   { category: "Winnie", name: "Winnie påfyllning v.4-5", duration: "90 minuter", price: "789 kr" },
 
-// Winter services
-{ category: "Winter", name: "Winter", duration: "120 minuter", price: "888 kr" },
-{ category: "Winter", name: "Mini påfyllning Winter", duration: "30 minuter", price: "415 kr" },
-{ category: "Winter", name: "Stor påfyllning Winter", duration: "105 minuter", price: "789 kr" },
-{ category: "Winter", name: "Winter påfyllning v.2", duration: "90 minuter", price: "469 kr" },
-{ category: "Winter", name: "Winter påfyllning v.3", duration: "90 minuter", price: "569 kr" },
-{ category: "Winter", name: "Winter påfyllning v.4-5", duration: "90 minuter", price: "689 kr" },
+   // Winter services
+   { category: "Winter", name: "Winter", duration: "120 minuter", price: "888 kr" },
+   { category: "Winter", name: "Mini påfyllning Winter", duration: "30 minuter", price: "415 kr" },
+   { category: "Winter", name: "Stor påfyllning Winter", duration: "105 minuter", price: "789 kr" },
+   { category: "Winter", name: "Winter påfyllning v.2", duration: "90 minuter", price: "469 kr" },
+   { category: "Winter", name: "Winter påfyllning v.3", duration: "90 minuter", price: "569 kr" },
+   { category: "Winter", name: "Winter påfyllning v.4-5", duration: "90 minuter", price: "689 kr" },
 
-// Wispy lash services
-{ category: "Wispy lash", name: "Wispy lash", duration: "120 minuter", price: "789 kr" },
-{ category: "Wispy lash", name: "Mini påfyllning Wispy lash", duration: "30 minuter", price: "363 kr" },
-{ category: "Wispy lash", name: "På fyllning wispy v 3", duration: "90 minuter", price: "542 kr" },
-{ category: "Wispy lash", name: "Stor påfyllning Wispy lash", duration: "105 minuter", price: "689 kr" },
-{ category: "Wispy lash", name: "Wispy påfyllning v.4-5", duration: "90 minuter", price: "636 kr" },
-{ category: "Wispy lash", name: "På fyllning wispy v 2", duration: "90 minuter", price: "456 kr" },
+   // Wispy lash services
+   { category: "Wispy lash", name: "Wispy lash", duration: "120 minuter", price: "789 kr" },
+   { category: "Wispy lash", name: "Mini påfyllning Wispy lash", duration: "30 minuter", price: "363 kr" },
+   { category: "Wispy lash", name: "På fyllning wispy v 3", duration: "90 minuter", price: "542 kr" },
+   { category: "Wispy lash", name: "Stor påfyllning Wispy lash", duration: "105 minuter", price: "689 kr" },
+   { category: "Wispy lash", name: "Wispy påfyllning v.4-5", duration: "90 minuter", price: "636 kr" },
+   { category: "Wispy lash", name: "På fyllning wispy v 2", duration: "90 minuter", price: "456 kr" },
 
-// Baby services
-{ category: "Baby", name: "Baby (ej tillgänglig)", duration: "120 minuter", price: "689 kr" },
-{ category: "Baby", name: "Påfyllning baby v.2", duration: "90 minuter", price: "454 kr" },
-{ category: "Baby", name: "Påfyllning baby v.3", duration: "90 minuter", price: "469 kr" },
-{ category: "Baby", name: "Påfyllning baby v 4-5", duration: "90 minuter", price: "514 kr" },
-{ category: "Baby", name: "Mini påfyllning baby", duration: "30 minuter", price: "324 kr" },
-{ category: "Baby", name: "Stor påfyllning baby", duration: "105 minuter", price: "569 kr" }
+   // Baby services
+   { category: "Baby", name: "Baby (ej tillgänglig)", duration: "120 minuter", price: "689 kr" },
+   { category: "Baby", name: "Påfyllning baby v.2", duration: "90 minuter", price: "454 kr" },
+   { category: "Baby", name: "Påfyllning baby v.3", duration: "90 minuter", price: "469 kr" },
+   { category: "Baby", name: "Påfyllning baby v 4-5", duration: "90 minuter", price: "514 kr" },
+   { category: "Baby", name: "Mini påfyllning baby", duration: "30 minuter", price: "324 kr" },
+   { category: "Baby", name: "Stor påfyllning baby", duration: "105 minuter", price: "569 kr" }
 ];
 
 export default servicesList;

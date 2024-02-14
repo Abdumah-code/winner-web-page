@@ -48,17 +48,17 @@ const Footer = ({ language }) => {
             <strong>{linksTitle}</strong>
             {links.map((link, idx) => <a href={'/' + link.toLowerCase()} key={idx}>{link}</a>)}
           </div>
-          <div className="services">
+          {/* <div className="services">
             <strong>{servicesTitle}</strong>
             {services.map((service, idx) => <a href={'/' + service.toLowerCase().replace(/\s+/g, '-') } key={idx}>{service}</a>)}
-          </div>
-          <div className="newsletter">
+          </div> */}
+          {/* <div className="newsletter">
             <strong>{newsletterTitle}</strong>
             <div className="input-group">
               <input type="email" placeholder="Email" />
               <button>{subscribe}</button>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </div>

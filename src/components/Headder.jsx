@@ -19,8 +19,16 @@ const Header = ({ language, setLanguage, setCurrentPage }) => {
     };
 
     const handleNavClick = (page) => {
-        setCurrentPage(page);
-    };
+        console.log("Received page:", page);
+      
+        if (page === "tjänster") {
+          // Handle both "tjänster" and "services" clicks here
+          setCurrentPage("services"); // Navigate to service booking page
+        } else {
+          // Handle other clicks based on your requirements
+          setCurrentPage(page);
+        }
+      };
 
     return (
         <div className="header">
